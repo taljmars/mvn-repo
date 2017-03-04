@@ -3,10 +3,9 @@
   <groupId>MapViewer</groupId>
   <artifactId>Viewer</artifactId>
   <versioning>
-    <release>RELEASE</release>
     <versions>
-      <version>RELEASE</version>
+      <version>1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20170304174004</lastUpdated>
+    <lastUpdated>20170304180410</lastUpdated>
   </versioning>
 </metadata>
