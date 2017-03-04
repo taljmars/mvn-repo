@@ -3,10 +3,9 @@
   <groupId>MapViewer</groupId>
   <artifactId>GeoTools</artifactId>
   <versioning>
-    <release>RELEASE</release>
     <versions>
-      <version>RELEASE</version>
+      <version>1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20170304173958</lastUpdated>
+    <lastUpdated>20170304175800</lastUpdated>
   </versioning>
 </metadata>
