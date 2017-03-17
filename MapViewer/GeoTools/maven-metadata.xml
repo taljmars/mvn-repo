@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>MapViewer</groupId>
+  <artifactId>GeoTools</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20170317215703</lastUpdated>
+  </versioning>
+</metadata>
