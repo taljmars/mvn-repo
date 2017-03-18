@@ -12,8 +12,8 @@
     </parent>
 
     <artifactId>DroneServerCore</artifactId>
-    <packaging>jar</packaging>
-    <name>Drone Server Core</name>
+    <!--<packaging>jar</packaging>
+    <name>Drone Server Core</name>-->
 
     <properties>
         <!-- github server corresponds to entry in ~/.m2/settings.xml -->
