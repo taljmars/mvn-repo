@@ -7,7 +7,7 @@
     <groupId>com.dronedb</groupId>
     <artifactId>DroneDB</artifactId>
     <packaging>pom</packaging>
-    <version>${version}</version>
+    <version>1.0</version>
 
     <modules>
         <module>DroneServerCore</module>
