@@ -10,6 +10,7 @@
     <version>1.0</version>
 
     <modules>
+        <module>Scheme</module>
         <module>DroneServerCore</module>
         <module>DroneServerTester</module>
     </modules>
