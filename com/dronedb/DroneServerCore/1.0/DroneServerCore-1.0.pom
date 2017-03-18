@@ -28,6 +28,12 @@
             <version>RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>Scheme</artifactId>
+            <version>${version}</version>
+        </dependency>
+
     </dependencies>
 
     <distributionManagement>
