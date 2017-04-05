@@ -7,7 +7,7 @@
     <groupId>com.generic_tools</groupId>
     <artifactId>GenericTools</artifactId>
     <packaging>pom</packaging>
-    <version>${myversion}</version>
+    <version>1.0</version>
 
     <modules>
         <module>Logger</module>
