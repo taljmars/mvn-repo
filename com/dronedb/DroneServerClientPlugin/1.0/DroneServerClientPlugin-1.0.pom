@@ -6,7 +6,7 @@
         <artifactId>DroneServer</artifactId>
         <groupId>com.dronedb</groupId>
         <version>1.0</version>
-        <relativePath>../pom.xml</relativePath>
+        <!--<relativePath>../pom.xml</relativePath>-->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -42,7 +42,7 @@
     </dependencies>
 
     <build>
-        <outputDirectory>../${build.output}/classes/</outputDirectory>
+        <!--<outputDirectory>../${build.output}/classes/</outputDirectory>-->
         <plugins>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
