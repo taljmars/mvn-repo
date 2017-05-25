@@ -14,6 +14,7 @@
         <module>DroneServerCore</module>
         <module>DroneServerTester</module>
         <module>DroneServerExportedServices</module>
+        <module>DroneServerClientPlugin</module>
     </modules>
 
     <properties>
@@ -141,6 +142,11 @@
                             <resources>
                                 <resource>
                                     <directory>${build.output}/jars/</directory>
+                                    <excludes>
+                                        <exclude>DroneServerTester*</exclude>
+                                        <exclude>DroneServerExportedServices*</exclude>
+                                        <exclude>DroneServerClientPlugin*</exclude>
+                                    </excludes>
                                 </resource>
                                 <resource>
                                     <directory>${build.output}/scripts/</directory>
@@ -214,7 +220,7 @@
                             <outputDirectory>CMpub/pkg</outputDirectory>
                             <overWriteIfNewer>true</overWriteIfNewer>
                             <excludeGroupIds>
-                                DroneServerTester,DroneServerExportedServices
+                                DroneServerTester,DroneServerExportedServices,DroneServerClientPlugin
                             </excludeGroupIds>
                         </configuration>
                     </execution>
