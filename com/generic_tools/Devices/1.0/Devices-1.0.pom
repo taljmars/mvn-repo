@@ -32,9 +32,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.rxtx</groupId>
-            <artifactId>rxtx</artifactId>
-            <version>RELEASE</version>
+            <groupId>RXTXcomm</groupId>
+            <artifactId>RXTXcomm</artifactId>
         </dependency>
 
     </dependencies>
@@ -45,9 +44,9 @@
 
         <!-- https://mvnrepository.com/artifact/org.rxtx/rxtx -->
             <dependency>
-                <groupId>org.rxtx</groupId>
-                <artifactId>rxtx</artifactId>
-                <version>RELEASE</version>
+                <groupId>RXTXcomm</groupId>
+                <artifactId>RXTXcomm</artifactId>
+                <version>1.0</version>
                 <scope>system</scope>
                 <systemPath>${project.basedir}/../ExtLib/RXTX/Linux32/RXTXcomm.jar</systemPath>
             </dependency>
