@@ -84,11 +84,21 @@
             <groupId>org.rxtx</groupId>
             <artifactId>rxtx</artifactId>
             <version>RELEASE</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../ExtLib/RXTX/Linux32/RXTXcomm.jar</systemPath>
         </dependency>
 
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.rxtx</groupId>
+                <artifactId>rxtx</artifactId>
+                <version>RELEASE</version>
+                <scope>system</scope>
+                <systemPath>${project.basedir}/../ExtLib/RXTX/Linux32/RXTXcomm.jar</systemPath>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <outputDirectory>../${build.output}/classes/</outputDirectory>
