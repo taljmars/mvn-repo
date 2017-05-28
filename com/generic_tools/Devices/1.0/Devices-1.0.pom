@@ -23,21 +23,27 @@
             <version>${myversion}</version>
         </dependency>
 
-    <!--</dependencies>-->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>javafx</artifactId>
+            <version>RELEASE</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/../../../../local/jdk1.8.0_121/jre/lib/ext/jfxrt.jar</systemPath>
+        </dependency>
 
-    <!--<dependencyManagement>-->
+        <dependency>
+            <groupId>org.rxtx</groupId>
+            <artifactId>rxtx</artifactId>
+            <version>RELEASE</version>
+        </dependency>
 
-        <!--<dependencies>-->
+    </dependencies>
 
-            <dependency>
-                <groupId>com.oracle</groupId>
-                <artifactId>javafx</artifactId>
-                <version>RELEASE</version>
-                <scope>system</scope>
-                <systemPath>${java.home}/../../../../local/jdk1.8.0_121/jre/lib/ext/jfxrt.jar</systemPath>
-            </dependency>
+    <dependencyManagement>
 
-            <!-- https://mvnrepository.com/artifact/org.rxtx/rxtx -->
+        <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.rxtx/rxtx -->
             <dependency>
                 <groupId>org.rxtx</groupId>
                 <artifactId>rxtx</artifactId>
@@ -48,7 +54,7 @@
 
         </dependencies>
 
-    <!--</dependencyManagement>-->
+    </dependencyManagement>
 
 
 
