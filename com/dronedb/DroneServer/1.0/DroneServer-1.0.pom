@@ -10,11 +10,13 @@
     <version>1.0</version>
 
     <modules>
-        <module>Scheme</module>
-        <module>DroneServerCore</module>
+        <module>ServerSchemeDronePlugin</module>
+        <module>ServerCore</module>
         <module>DroneServerAnalyzer</module>
-        <module>DroneServerTester</module>
-        <module>DroneServerExportedServices</module>
+        <!--<module>DroneServerTester</module>-->
+        <!--<module>DroneServerExportedServices</module>-->
+        <module>ServerCoreDronePlugin</module>
+        <module>ServerScheme</module>
     </modules>
 
     <properties>
@@ -240,7 +242,8 @@
         <repository>
             <id>taljmars-mvn-repo</id>
             <name>taljmars-mvn-repo</name>
-            <url>https://raw.githubusercontent.com/taljmars/mvn-repo/master/</url>
+            <!--<url>https://raw.githubusercontent.com/taljmars/mvn-repo/master/</url>-->
+            <url>https://raw.github.com/taljmars/mvn-repo/master/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
