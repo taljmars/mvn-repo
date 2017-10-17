@@ -53,7 +53,6 @@
         </dependency>
 
         <!--Validation-->
-
         <dependency>
             <groupId>com.generic_tools</groupId>
             <artifactId>Validations</artifactId>
@@ -68,36 +67,5 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-
-        <plugins>
-
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-deploy-plugin</artifactId>-->
-                <!--<version>${maven.deploy.plugin}</version>-->
-                <!--&lt;!&ndash;<configuration>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<skip>true</skip>&ndash;&gt;-->
-                <!--&lt;!&ndash;</configuration>&ndash;&gt;-->
-                <!--&lt;!&ndash;<inherited>false</inherited>&ndash;&gt;-->
-            <!--</plugin>-->
-
-        </plugins>
-    </build>
-
-    <!--<repositories>-->
-
-        <!--<repository>-->
-            <!--<id>taljmars-mvn-repo</id>-->
-            <!--<name>taljmars-mvn-repo</name>-->
-            <!--<url>https://raw.githubusercontent.com/taljmars/mvn-repo/master/</url>-->
-            <!--<snapshots>-->
-                <!--<enabled>true</enabled>-->
-                <!--<updatePolicy>always</updatePolicy>-->
-            <!--</snapshots>-->
-        <!--</repository>-->
-
-    <!--</repositories>-->
 
 </project>
