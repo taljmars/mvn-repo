@@ -179,7 +179,7 @@
                         <configuration>
                             <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
                         </configuration>
-                        <inherited>false</inherited>
+                        <!--<inherited>false</inherited>-->
                     </execution>
                 </executions>
             </plugin>
