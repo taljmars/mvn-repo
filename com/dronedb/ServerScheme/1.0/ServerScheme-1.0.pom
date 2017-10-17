@@ -47,6 +47,7 @@
             <artifactId>spring-web</artifactId>
             <version>4.3.11.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -62,14 +63,6 @@
 
     </dependencies>
 
-    <!--<distributionManagement>-->
-        <!--<repository>-->
-            <!--<id>internal.repo</id>-->
-            <!--<name>Temporary Staging Repository</name>-->
-            <!--<url>file://${project.build.directory}/mvn-repo</url>-->
-        <!--</repository>-->
-    <!--</distributionManagement>-->
-
     <build>
 
         <plugins>
@@ -81,7 +74,6 @@
                 <configuration>
                     <skip>true</skip>
                 </configuration>
-                <!--<inherited>false</inherited>-->
             </plugin>
 
         </plugins>
