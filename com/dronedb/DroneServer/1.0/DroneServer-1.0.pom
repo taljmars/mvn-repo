@@ -31,9 +31,9 @@
         <maven.debug>false</maven.debug>
 
         <!--Maven Build Plugin-->
-        <maven.site.plugin>3.6</maven.site.plugin>
-        <maven.deploy.plugin>2.8.1</maven.deploy.plugin>
-        <site.maven.plugin>0.11</site.maven.plugin>
+        <maven.site.plugin.version>3.6</maven.site.plugin.version>
+        <maven.deploy.plugin.version>2.8.1</maven.deploy.plugin.version>
+        <site.maven.plugin.version>0.11</site.maven.plugin.version>
         <jar.path>${build.output}/jars/</jar.path>
         <class.path>${build.output}/classes/</class.path>
         <pkg_server.path>${build.output}/pkg_server</pkg_server.path>
@@ -153,34 +153,36 @@
                         </goals>
                     </execution>
 
-                    <execution>
-                        <phase>site</phase>
-                        <configuration>
-                            <tasks>
-                                <exec dir="/usr/bin/"
-                                      executable="scp"
-                                      failonerror="true">
-                                    <arg line="-r ${basedir}/${pkg_server.path} root@178.62.1.156:~/" />
-                                </exec>
-                            </tasks>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <inherited>false</inherited>
-                    </execution>
+                    <!--<execution>-->
+                        <!--<phase>site</phase>-->
+                        <!--<configuration>-->
+                            <!--<tasks>-->
+                                <!--<exec dir="/usr/bin/"-->
+                                      <!--executable="scp"-->
+                                      <!--failonerror="true">-->
+                                    <!--<arg line="-r ${basedir}/${pkg_server.path} root@178.62.1.156:~/" />-->
+                                <!--</exec>-->
+                            <!--</tasks>-->
+                        <!--</configuration>-->
+                        <!--<goals>-->
+                            <!--<goal>run</goal>-->
+                        <!--</goals>-->
+                        <!--<inherited>false</inherited>-->
+                    <!--</execution>-->
                 </executions>
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <version>${maven.deploy.plugin}</version>
+                <version>${maven.deploy.plugin.version}</version>
                 <executions>
                     <execution>
                         <id>deploy-plugin-main</id>
                         <configuration>
-                            <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+                            <altDeploymentRepository>
+                                internal.repo::default::file://${project.build.directory}/mvn-repo
+                            </altDeploymentRepository>
                         </configuration>
                         <!--<inherited>false</inherited>-->
                     </execution>
@@ -190,14 +192,16 @@
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
-                <version>${site.maven.plugin}</version>
+                <version>${site.maven.plugin.version}</version>
                 <configuration>
                     <merge>true</merge>
                     <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
                     <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
                     <branch>refs/heads/master</branch>                     <!-- remote branch name -->
-                    <includes><include>**/*</include></includes>
+                    <includes>
+                        <include>**/*</include>
+                    </includes>
                     <repositoryName>mvn-repo</repositoryName>      <!-- github repo name -->
                     <repositoryOwner>taljmars</repositoryOwner>    <!-- github username  -->
                 </configuration>
