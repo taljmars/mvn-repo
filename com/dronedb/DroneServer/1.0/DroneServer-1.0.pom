@@ -20,6 +20,7 @@
         <!--the WSExporter during maven compilation-->
         <module>WSExported</module>
         <module>ServerExportedServices</module>
+        <module>PluginsManager</module>
     </modules>
 
     <properties>
