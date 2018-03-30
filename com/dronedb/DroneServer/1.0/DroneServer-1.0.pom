@@ -11,7 +11,6 @@
 
     <modules>
         <module>LogsManagerPlugin</module>
-        <module>ServerCore</module>
         <module>DroneServerAnalyzer</module>
         <!--<module>DroneServerTester</module>-->
         <module>DronePlugin</module>
@@ -22,13 +21,18 @@
         <module>WSExported</module>
         <module>ServerExportedServices</module>
         <module>PluginsManager</module>
+
+        <!-- The following module must always be the last because it also execute the package creation -->
+        <!-- and it must include the jar output of all the above modules -->
+        <module>ServerCore</module>
     </modules>
 
     <properties>
         <version>1.0</version>
         <build.output>CMpub</build.output>
         <github.global.server>github</github.global.server>
-        <spring-ver>4.3.3.RELEASE</spring-ver>
+        <!--<spring-ver>4.3.3.RELEASE</spring-ver>-->
+        <spring-ver>5.0.4.RELEASE</spring-ver>
         <encoding>UTF-8</encoding>
         <maven.debug>false</maven.debug>
         <!--<slf4jVersion>1.7.25</slf4jVersion>-->
